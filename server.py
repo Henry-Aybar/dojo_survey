@@ -19,11 +19,13 @@ def create_user():
     loc = request.form['loc']
     lang = request.form['lang']
     comment = request.form['comment']
+    # check1 = request.form['check1']
 
     session['username'] = name
     session['location'] = loc
     session['language'] = lang
     session['comments'] = comment
+    # session['check1'] = check1
 
     return redirect('/result')
    
@@ -32,7 +34,9 @@ def show_user():
     print("Show the User Info From the Form")
     print(request.form)
     print(session)
-    return render_template('result.html', username = session['username'], location = session['location'], language = session['language'], comments = session['comments'] )
+    return render_template('result.html', username = session['username'], location = session['location'], language = session['language'], comments = session['comments'])
+    
+    # , check1 = session['check1'] )
     
 
 @app.route('/clear') # futur log out wipe session

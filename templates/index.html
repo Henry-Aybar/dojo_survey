@@ -12,12 +12,12 @@
     <div class="container">
         <form action='/users' method='POST'>
             <h1>Dojo Survey</h1>
-
+<!-- Name Entry -->
             <div class="form-floating mb-3">
                 <input type="name" class="form-control" id="floatingInput" placeholder="Name" name = 'name'>
                 <label for="floatingInput">Name</label>
             </div>
-
+<!-- Location -->
             <div class="form-floating">
                 <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name = 'loc'>
                   <option selected>Select Dojo Location</option>
@@ -29,7 +29,7 @@
                 </select>
                 <label for="floatingSelect">Dojo Location</label>
             </div>
-
+<!-- Language -->
             <div class="form-floating">
                 <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name ='lang'>
                   <option selected>Select Language</option>
@@ -41,10 +41,29 @@
                 </select>
                 <label for="floatingInput">Favorite Language</label>
             </div>
-
+<!-- Comments -->
             <div class="form-floating">
                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 250px" name= 'comment'></textarea>
                 <label for="floatingTextarea2">Comments</label>
+              </div>
+<!-- Check Boxes -->
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Not Batman" id="flexCheckDefault" name= 'check1'>
+                <label class="form-check-label" for="flexCheckDefault">
+                 Not Batman
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="I'm Totaly Batman" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  I'm Totaly Batman
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Bruce Wayne" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Bruce Wayne
+                </label>
               </div>
 
             <input class='btn btn-primary' type='submit' value='Create User'>

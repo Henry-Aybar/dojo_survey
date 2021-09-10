@@ -11,6 +11,10 @@ h1 {
     margin: 25px;
 }
 
+.form-check-label {
+    color: white;
+}
+
 .btn {
     margin: 25px;
 }
