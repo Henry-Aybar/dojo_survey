@@ -1,0 +1,23 @@
+.container {
+    background-color: rgb(56, 56, 56);
+}
+
+h1 {
+    color: goldenrod;
+    text-align: center;
+}
+
+.form-floating {
+    margin: 25px;
+}
+
+.btn {
+    margin: 25px;
+}
+
+/* On Result Paage */
+
+h3 {
+    margin: 25px;
+    color: white;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Survey over view</title>
+</head>
+<body>
+    <div class="container">
+        <h1>You Submitted!</h1>
+
+        <h3>Name: {{ username }} </h3>
+        <h3>Location: {{ location }}</h3>
+        <h3>Favorite Language: {{ language }}</h3>     
+        <h3>Commented: {{ comments }}</h3>
+
+
+
+    </div>
+</body>
+</html>
